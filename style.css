@@ -1,7 +1,7 @@
 body{
     background: rgb(60, 60, 136);
     font: normal 15pt arial;
-    max-width: 700px;
+    max-width: 1280px;
     margin: auto;
     }
     header{
@@ -90,11 +90,21 @@ margin-left: -120px;
 
 @media screen and (max-width:800px)  {
   section{
-    width: 380px;
+    width: 400px;
+    padding: 20px 4%;
     
   }
   label{
-   margin-left: -120px;
+   margin-left: ;
+  }
+  label input{
+    max-width: 230px;
+  }
+
+  p.paragrafo{
+    margin:20px auto;
+    width: 300px;
+
   }
 
 }
