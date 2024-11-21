@@ -32,7 +32,7 @@ function enviar(){
 
     var data = new Date()
     var hora =data.getHours()
-    var horam =data.getUTCMinutes()
+    var horam =data.getMinutes()
     //var fomar = window.document.getElementById('fomar')
     var nome = window.document.getElementById('nome').value;
     var endereco = window.document.getElementById('endereco').value;

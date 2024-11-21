@@ -71,7 +71,10 @@ form{
       });
       meuForm.innerHTML = `
       <p>intens</p>
-      vc escolheu <strong> ${ selecionados } </strong>`
+      vc escolheu <strong> ${ selecionados } </strong>
+      <p>${data} ${hora}${horam}</p>
+      
+      `
 
       /* Exibindo os valores selecionados
       if (selecionados.length > 0) {
@@ -81,21 +84,12 @@ form{
       }*/
     }
     </script>
-    <p id="demo"></p>
+
 
 <script>
-let text;
-const today = new Date();
-const someday = new Date();
-someday.setFullYear(2024);
-
-if (someday > today) {
-  text = "hoje ."+${someday};
-} else {
-  text = ".";
-}
-
-document.getElementById("demo").innerHTML = text;
+ var data = new Date()
+    var hora =data.getHours()
+    var horam =data.getMinutes()
 </script>
   
 
