@@ -53,7 +53,7 @@ function enviar(){
        <p> No Macarão <strong>${massa}</strong></p>
          <p>Endendeço <strong>${endereco}</strong></p>
        <h6>Temperos para Refogar</h6>
-       <p>${refogar}</p>
+       <strong>${refogar}</strong>
         
           <h6>temperos para refogar</h6>
 <strong>${ selecionados }</strong>
