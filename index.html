@@ -10,64 +10,66 @@
 
 <body>
     <section>
-
-        <div id="fomar">
+        <div class="flex" id="fomar">
             <form action="" method="post">
                 <h3>GOLDERE</h3>
                 <h5>MACARRODAS DELIVERY</h5>
 
-                <p>Qual o seu Nome</p>
-                <label for="">Nome:</label><input type="text" name="nome" id="nome"></br>
-                <label for="">Endenço:</label><input type="text" name="endereco" id="endereco"></br>
-                <label for="">Telefone:</label><input type="tel" name="telefone" id="telefone">
-                <p>Somente uma opção</p>
-                <label for="">Frango:</label><input type="radio" name="recheio" id="recheio" value="frango">
-                <label for="">Bolonhesa:</label><input type="radio" name="recheio" id="recheio" value="bolonhesa">
-                <label for="">Calabresa:</label><input type="radio" name="recheio" id="recheio" value="calabresa">
-                <label for="">Camarão:</label><input type="radio" name="recheio" id="recheio" value="camarao">
-                <p>Escola seus molhos</p>
-                <label for="molho">Branco</label> <input type="radio" name="molho" id="molho" value="branco">
-                <label for="">Vermelho:</label><input type="radio" name="molho" id="molho" value="vermelho">
-                <label for="">Rose:</label><input type="radio" name="molho" id="molho" value="rose">
-                <p>Escolha seu macarrão</p>
-                <label for="">Penne: </label><input type="radio" name="massa" id="massa" value="penne">
-                <label for="">Talharim:</label><input type="radio" name="massa" id="massa" value="talharim">
-               <label for=""> Parafuso: </label><input type="radio" name="massa" id="massa" value="parafuso">
-                ç<label for="">Espaquete: </label><input type="radio" name="massa" id="massa" value="espaguete">
-                <p>Refogue 0 a 6 Opções </p>
-                <label for="alho">Alho </label><input type="checkbox" class="checkbox" name="refogar1" id="alho"
-                    value="alho">
-                <label for="cebola">Cebola </label><input type="checkbox" class="checkbox" name="refogar2" id="cebola"
-                    value="cebola"><br>
-                <label for="tomate">Tomate </label><input type="checkbox" class="checkbox" name="refogar3" id="tomate"
-                    value="tomate">
-                <label for="pimentao">Pimentão </label><input type="checkbox" class="checkbox" name="refogar4"
-                    id="pimentao" value="pimentao"> <br>
-                <label for="azeitona">Azeitona</label><input type="checkbox" class="checkbox" name="refogar5"
-                    id="azeitona" value="azeitona">
-                <label for="mverde">Milho verde </label><input type="checkbox" class="checkbox" name="refogar6"
-                    id="mverde" value="mverde"><br>
-                <label for="ervilha">Ervilha</label><input type="checkbox" class="checkbox" name="refogar7" id="ervilha"
-                    value="ervilha">
-                <label for="upassa">Uva passa </label><input type="checkbox" class="checkbox" name="refogar8"
-                    id="upassa" value="upassa"><br>
-                <label for="presunto">Presunto </label><input type="checkbox" class="checkbox" name="refogar9"
-                    id="presunto" value="presunto">
-                <label for="qcoalho">Queijo Coalho</label><input type="checkbox" class="checkbox" name="refogar10"
-                    id="qcoalho" value="qcoalho"><br>
-                <label for="bacon">Bacon</label><input type="checkbox" class="checkbox" name="refogar" id="bacon11"
-                    value="bacon">
-                <label for="cverde">Cheiro Verde</label><input type="checkbox" class="checkbox" name="refogar12"
-                    id="cverde" value="cverde">
-                <p>Finalize de 0 a 3 opção</p>
-                <label for="">Ovo de Codorna: </label><input type="checkbox" name="" id="finalizar">
-                <label for="">Queijo Parmezão:</label> <input type="checkbox" name="" id="finalizar"><br>
-                <label for="">Mussarela: </label><input type="checkbox" name="" id="finalizar">
-                <label for="">Oregano:</label> <input type="checkbox" name="" id="finalizar"><br>
-                <label for="">Catupiry:</label> <input type="checkbox" name="" id="finalizar">
-                <label for="">Cheddar:</label> <input type="checkbox" name="" id="finalizar"><br><br>
-                <input type="submit" value="Enviar" onclick="enviar()">
-                <input type="reset" value="Limpar ">
+                <p class="paragrafo">Qual o seu Nome</p>
+                <label for="">Nome:</label><input type="text" name="nome" id="nome" placeholder="Seu Nome"></br>
+                <label for="">Endenço:</label><input type="text" name="endereco" id="endereco"
+                    placeholder="Seu Endereço"></br>
+                <label for="">Telefone:</label><input type="tel" name="telefone" id="telefone"
+                    title="Digite o telefone no formato (XX) XXXXX-XXXX" placeholder="(XX) XXXXX-XXXX"
+                    pattern="\(\d{2}\) \d{5}-\d{4}">
+                <p class="paragrafo">Somente uma opção</p>
+                <label for="recheio">Frango:<input type="radio" name="recheio" id="recheio" value="frango"></label>
+                <label for="recheio">Bolonhesa:<input type="radio" name="recheio" id="recheio" value="bolonhesa"></label>
+                <label for="recheio">Calabresa:<input type="radio" name="recheio" id="recheio" value="calabresa"></label>
+                <label for="recheio">Camarão:<input type="radio" name="recheio" id="recheio" value="camarao"></label>
+                <p class="paragrafo">Escola seus molhos</p>
+                <label for="molho">Branco:<input type="radio" name="molho" id="molho" value="branco"></label>
+                <label for="">Vermelho:<input type="radio" name="molho" id="molho" value="vermelho"></label>
+                <label for="">Rose:<input type="radio" name="molho" id="molho" value="rose"></label>
+                <p class="paragrafo">Escolha seu macarrão</p>
+                <label for="">Penne: <input type="radio" name="massa" id="massa" value="penne"></label>
+                <label for="">Talharim:<input type="radio" name="massa" id="massa" value="talharim"></label>
+                <label for=""> Parafuso:<input type="radio" name="massa" id="massa" value="parafuso"> </label>
+                <label for="">Espaquete:<input type="radio" name="massa" id="massa" value="espaguete"> </label>
+                <p class="paragrafo">Refogue 0 a 6 Opções </p>
+                <label for="alho">Alho:<input type="checkbox" class="checkbox" name="refogar1" id="alho" value="alho">
+                </label>
+                <label for="cebola">Cebola:<input type="checkbox" class="checkbox" name="refogar2" id="cebola"
+                        value="cebola"> </label>
+                <label for="tomate">Tomate:<input type="checkbox" class="checkbox" name="refogar3" id="tomate"
+                        value="tomate"> </label>
+                <label for="pimentao">Pimentão:<input type="checkbox" class="checkbox" name="refogar4" id="pimentao"
+                        value="pimentao"></label>
+                <label for="azeitona">Azeitona:<input type="checkbox" class="checkbox" name="refogar5" id="azeitona"
+                        value="azeitona"></label>
+                <label for="mverde">Milho verde:<input type="checkbox" class="checkbox" name="refogar6" id="mverde"
+                        value="mverde"> </label>
+                <label for="ervilha">Ervilha:<input type="checkbox" class="checkbox" name="refogar7" id="ervilha"
+                        value="ervilha"></label>
+                <label for="upassa">Uva passa:<input type="checkbox" class="checkbox" name="refogar8" id="upassa"
+                        value="upassa"> </label>
+                <label for="presunto">Presunto:<input type="checkbox" class="checkbox" name="refogar9" id="presunto"
+                        value="presunto"> </label>
+                <label for="qcoalho">Queijo Coalho:<input type="checkbox" class="checkbox" name="refogar10" id="qcoalho"
+                        value="qcoalho"></label>
+                <label for="bacon">Bacon:<input type="checkbox" class="checkbox" name="refogar" id="bacon"
+                        value="bacon"></label>
+                <label for="cverde">Cheiro Verde:<input type="checkbox" class="checkbox" name="refogar12" id="cverde"
+                        value="cverde"></label>
+                <p class="paragrafo">Finalize de 0 a 3 opção</p>
+                <label for="">Ovo de Codorna:<input type="checkbox" name="" id="finalizar"> </label>
+                <label for="">Queijo Parmezão:<input type="checkbox" name="" id="finalizar"></label>
+                <label for="">Mussarela:<input type="checkbox" name="" id="finalizar"> </label>
+                <label for="">Oregano: <input type="checkbox" name="" id="finalizar"></label>
+                <label for="">Catupiry:<input type="checkbox" name="" id="finalizar"></label>
+                <label for="">Cheddar: <input type="checkbox" name="" id="finalizar"></label>
+                <input class="btn" type="submit" value="Enviar" onclick="enviar()">
+                <input class="btn" type="reset" value="Limpar ">
             </form>
         </div>
 
