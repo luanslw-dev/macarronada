@@ -72,6 +72,20 @@ div.flex form label {
 text-transform: uppercase;
 justify-items: center;
 }
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+   
+  }
     
 
 @media screen and (max-width:768px)  {
