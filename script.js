@@ -32,9 +32,7 @@ function enviar(){
           <h6>temperos para refogar</h6>
     
          <p> Seu contato e <strong>${telefone}</strong></p>
-          <p> Hora do pedido <strong>${hora}:${horam}</strong> Seu pedido pode demorar de 35-min a 40-min</p>  
-          
-        ` 
+          <p> Hora do pedido <strong>${hora}:${horam}</strong></p><p>Tempo de espera de 35-min a 40-min</p>  ` 
 
 
 
