@@ -45,7 +45,7 @@ function enviar(){
     //let num =[nome,endereco,telefone,recheio,molho,massa,refogar,finalizar]
     
     if(nome != '' && endereco!='' && telefone!='' && recheio!='' && molho!='' && massa!=''){
-     fomar.innerHTML = `<a href="index.html">voltar</a>  ${data} 
+     fomar.innerHTML = `<a href="index.html">voltar</a>  
      <h3>GOLDERE</h3>  
      <h5>MACARRODAS DELIVERY</h5>
      <h6>Segue a baixao os dados do pedido</h6>
