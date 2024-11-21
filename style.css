@@ -51,19 +51,19 @@ h6{
     text-align: center;
 }
 
+
 div.flex form{
     display: flex;
     flex-direction: column;
     gap: 10px;
- 
+    margin: auto;
+    
     
 }
 div.flex form input{
     width: 300px;
     padding: 10px;
-    border-radius: 10px;
-   
-    
+    border-radius: 10px; 
 }
 div.flex form input.btn{
     margin: auto;
@@ -74,6 +74,8 @@ justify-items: center;
 }
     
 
-@media screen and (max-width:800px;)  {
-    
+@media screen and (max-width:768px)  {
+  section{
+    width: 400px;
+  }
 }
