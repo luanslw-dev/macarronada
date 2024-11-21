@@ -49,15 +49,15 @@ function enviar(){
      <h3>GOLDERE</h3>  
      <h5>MACARRODAS DELIVERY</h5>
      <h6>Segue a baixao os dados do pedido</h6>
-     <p>Ola<strong>${nome},Tudo bem</strong></p>
+     <p>Ola! <strong>${nome},Tudo bem</strong></p>
      <p>Seu pedido esta sendo preparado</p>
     <p> Sabor de <strong>${recheio}</strong> Ao  Molho <strong>${molho}</strong></p>
        <p> No Macarão <strong>${massa}</strong></p>
          <p>Endendeço <strong>${endereco}</strong></p>
          <p> Seu contato e <strong>(${telefone})</strong></p>
-       <p>Ingredientes para finalizar</p>
-       <strong>"${refogar}"</strong>
           <p>temperos para refogar</p>
+       <strong>"${refogar}"</strong>
+            <p>Ingredientes para finalizar</p>
 <strong>"${ selecionados }"</strong>
          
           <p> Hora do pedido <strong>${hora}:${horam}</strong></p>

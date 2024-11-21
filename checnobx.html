@@ -4,24 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Captura de múltiplos Checkboxes</title>
+  <style>
+
+section.formulario{
+    padding: 80px 4%;
+}
+div.container{
+    background-color: red;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+  </style>
 </head>
 <body>
     
 
-
-  <form id="meuForm">
-    <label>
-      <input type="checkbox" class="termos" value="tomate"> Termo 1
-    </label><br>
-    <label>
-      <input type="checkbox" class="termos" value="cebola"> Termo 2
-    </label><br>
-    <label>
-      <input type="checkbox" class="termos" value="alho"> dfhdfhdhdfhgfhfghfgdhTermo 3
-    </label><br>
-
-    <button type="button" onclick="capturarDados()">Enviar</button>
-  </form>
+<section class="formulario">
+    <div class="container">
+    
+        <form id="meuForm">
+          <label>
+            <input type="checkbox" class="termos" value="tomate"> Termo 1
+          </label>
+          <label>
+            <input type="checkbox" class="termos" value="cebola"> Termo 2
+          </label>
+          <label>
+            <input type="checkbox" class="termos" value="alho"> dfhdfhdhdfhgfhfghfgdhTermo 3
+          </label>
+          <label>
+              <input type="checkbox" class="termos" value="tomate"> Termo 1
+            </label>
+            <label>
+              <input type="checkbox" class="termos" value="cebola"> Termo 2
+            </label>
+            <label>
+              <input type="checkbox" class="termos" value="alho"> dfhdfhdhdfhgfhfghfgdhTermo 3
+            </label>
+      
+          <button type="button" onclick="capturarDados()">Enviar</button>
+        </form>
+      </div>
+</section>
 
  <!--  <p id="resultado"></p>--> 
 
@@ -48,7 +80,24 @@
         document.getElementById('resultado').textContent = "Você não aceitou nenhum termo.";
       }*/
     }
-   
+    </script>
+    <p id="demo"></p>
+
+<script>
+let text;
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2024);
+
+if (someday > today) {
+  text = "hoje ."+${someday};
+} else {
+  text = ".";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+  
 
 
    
