@@ -1,6 +1,8 @@
 body{
     background: rgb(60, 60, 136);
     font: normal 15pt arial;
+    max-width: 700px;
+    margin: auto;
     }
     header{
         color: white;
@@ -8,12 +10,14 @@ body{
     
     }
     section{
+       
     background-color:#ffffffee;
     border-radius: 10px;
     padding: 15px;
-    width: 700px;
+   
     margin: auto;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.425);
+    margin-bottom: 20px;
     }
     footer{
         color: white;
@@ -71,6 +75,7 @@ div.flex form input{
 }
 div.flex form input.btn{
     margin:10px  auto;
+    width: 150px;
     
 
 }
@@ -85,7 +90,8 @@ margin-left: -120px;
 
 @media screen and (max-width:800px)  {
   section{
-    width: 400px;
+    width: 380px;
+    
   }
   label{
    margin-left: -120px;
