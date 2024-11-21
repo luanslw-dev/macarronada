@@ -54,13 +54,14 @@ function enviar(){
     <p> Sabor de <strong>${recheio}</strong> Ao  Molho <strong>${molho}</strong></p>
        <p> No Macarão <strong>${massa}</strong></p>
          <p>Endendeço <strong>${endereco}</strong></p>
+         <p> Seu contato e <strong>(${telefone})</strong></p>
        <p>Ingredientes para finalizar</p>
        <strong>"${refogar}"</strong>
-        
           <p>temperos para refogar</p>
 <strong>"${ selecionados }"</strong>
-         <p> Seu contato e <strong>${telefone}</strong></p>
-          <p> Hora do pedido <strong>${hora}:${horam}</strong></p><p>Tempo de espera de 35-min a 40-min</p>  ` 
+         
+          <p> Hora do pedido <strong>${hora}:${horam}</strong></p>
+          <p>Tempo de espera de 35-min a 40-min</p>  ` 
 
 
 
