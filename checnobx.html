@@ -9,19 +9,19 @@
 
   <form id="meuForm">
     <label>
-      <input type="checkbox" class="termos" value="termo1"> Termo 1
+      <input type="checkbox" class="termos" value="tomate"> Termo 1
     </label><br>
     <label>
-      <input type="checkbox" class="termos" value="termo2"> Termo 2
+      <input type="checkbox" class="termos" value="cebola"> Termo 2
     </label><br>
     <label>
-      <input type="checkbox" class="termos" value="termo3"> dfhdfhdhdfhgfhfghfgdhTermo 3
+      <input type="checkbox" class="termos" value="alho"> dfhdfhdhdfhgfhfghfgdhTermo 3
     </label><br>
 
     <button type="button" onclick="capturarDados()">Enviar</button>
   </form>
 
-  <p id="resultado"></p>
+ <!--  <p id="resultado"></p>--> 
 
   <script>
     function capturarDados() {
@@ -35,13 +35,16 @@
           selecionados.push(checkbox.value);
         }
       });
+      meuForm.innerHTML = `
+      <p>intens</p>
+      vc escolheu <strong> ${ selecionados } </strong>`
 
-      // Exibindo os valores selecionados
+      /* Exibindo os valores selecionados
       if (selecionados.length > 0) {
         document.getElementById('resultado').textContent = "Você aceitou os seguintes termos: " + selecionados.join(", ");
       } else {
         document.getElementById('resultado').textContent = "Você não aceitou nenhum termo.";
-      }
+      }*/
     }
   </script>
 
