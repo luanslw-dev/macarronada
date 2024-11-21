@@ -5,6 +5,8 @@ function carregar(){
 }
 
 function enviar(){
+   
+
     var data = new Date()
     var hora =data.getHours()
     var horam =data.getMinutes()
@@ -20,17 +22,21 @@ function enviar(){
     //let num =[nome,endereco,telefone,recheio,molho,massa,refogar,finalizar]
     
     if(nome != '' && endereco!='' && telefone!='' && recheio!='' && molho!='' && massa!=''){
-     fomar.innerHTML = `<h3>GOLDERE</h3> <h5>MACARRODAS DELIVERY</h5><br>
-     <h6>Segue a baixao os dados do pediso</h6><br>
-     Ola <strong>${nome}</strong><br>
-     Sabor de <strong>${recheio}</strong> Ao  Molho <strong>${molho}</strong><br>
-        No Macarão <strong>${massa}</strong><br>
-          Endendeço <strong>${endereco}</strong><br>
-          temporos para refogar<br>
-       <br>
-       
-          Seu contato e <strong>${telefone}</strong><br> Hora do pedido <strong>${hora}:${horam}</strong>
-          ` 
+     fomar.innerHTML = `<a href="index.html">voltar</a> <h3>GOLDERE</h3>   
+     <h5>MACARRODAS DELIVERY</h5>
+     <h6>Segue a baixao os dados do pedido</h6>
+     <p>Ola <strong>${nome}</strong></p>
+    <p> Sabor de <strong>${recheio}</strong> Ao  Molho <strong>${molho}</strong></p>
+       <p> No Macarão <strong>${massa}</strong></p>
+          <p>Endendeço <strong>${endereco}</strong></p>
+          <h6>temperos para refogar</h6>
+    
+         <p> Seu contato e <strong>${telefone}</strong></p>
+          <p> Hora do pedido <strong>${hora}:${horam}</strong> Seu pedido pode demorar de 35-min a 40-min</p>  
+          
+        ` 
+
+
 
     }else{
         alert('error')

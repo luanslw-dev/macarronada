@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captura de múltiplos Checkboxes</title>
+</head>
+<body>
+
+  <form id="meuForm">
+    <label>
+      <input type="checkbox" class="termos" value="termo1"> Termo 1
+    </label><br>
+    <label>
+      <input type="checkbox" class="termos" value="termo2"> Termo 2
+    </label><br>
+    <label>
+      <input type="checkbox" class="termos" value="termo3"> dfhdfhdhdfhgfhfghfgdhTermo 3
+    </label><br>
+
+    <button type="button" onclick="capturarDados()">Enviar</button>
+  </form>
+
+  <p id="resultado"></p>
+
+  <script>
+    function capturarDados() {
+      // Capturando todos os checkboxes com a classe 'termos'
+      var checkboxes = document.querySelectorAll('.termos');
+      var selecionados = [];
+
+      // Verificando quais checkboxes estão marcados
+      checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+          selecionados.push(checkbox.value);
+        }
+      });
+
+      // Exibindo os valores selecionados
+      if (selecionados.length > 0) {
+        document.getElementById('resultado').textContent = "Você aceitou os seguintes termos: " + selecionados.join(", ");
+      } else {
+        document.getElementById('resultado').textContent = "Você não aceitou nenhum termo.";
+      }
+    }
+  </script>
+
+</body>
+</html>
